@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="UTF-8" />
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img2.freepng.ru/20180425/rse/avekc8szp.webp"/>
+    <title>Обучалка по основам HTML</title>
+  </head>
+  <body>
+  <div style="text-align: center;">
+    <h1>Вы на обучалке по основам html</h1>
+  <ul> 
+<h2>    <li><a href="index.html" class="active">Главная</a></li>
+    <li><a href="page2.html">Основы HTML</a></li>
+    <li><a href="page3.html">Основы CSS</a></li></h2>
+<h2> Основные HTML-коды для создания веб-страницы </h2>
+<h2>1. Базовая структура HTML-документа </h1>
+  <pre><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="ru"&gt;
+  &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;Название страницы&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;!-- Содержимое страницы --&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+<h2>2. Заголовки и текстовые элементы </h2>
+<pre>
+&lt;h1&gt;Главный заголовок&lt;/h1&gt;
+&lt;h2&gt;Заголовок второго уровня&lt;/h2&gt;
+&lt;h3&gt;Заголовок третьего уровня&lt;/h3&gt;
 
+&lt;p&gt;Это абзац текста.&lt;/p&gt;
+&lt;p&gt;Еще один абзац с &lt;strong&gt;жирным&lt;/strong&gt; и &lt;em&gt;курсивным&lt;/em&gt; текстом.&lt;/p&gt;
+</pre>
+<h2>3.Ссылки и изображения </h2>
+<pre><code>
+&lt;a href=&quot;https://example.com&quot;&gt;Текст ссылки&lt;/a&gt;
+&lt;a href=&quot;page.html&quot;&gt;Ссылка на другую страницу&lt;/a&gt;
+&lt;a href=&quot;#section&quot;&gt;Якорная ссылка&lt;/a&gt;
+
+&lt;img src=&quot;image.jpg&quot; alt=&quot;Описание изображения&quot; width=&quot;300&quot;&gt;
+</code></pre>
+<h2>4. Списки</h2>
+<pre><code>&lt;!-- Маркированный список --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Первый пункт&lt;/li&gt;
+    &lt;li&gt;Второй пункт&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Нумерованный список --&gt;
+&lt;ol&gt;
+    &lt;li&gt;Первый пункт&lt;/li&gt;
+    &lt;li&gt;Второй пункт&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<h2>5. Таблица </h2>
+<pre>&lt;table border=&quot;1&quot;&gt;
+&lt;tr&gt;
+    &lt;th&gt;Заголовок 1&lt;/th&gt;
+    &lt;th&gt;Заголовок 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Ячейка 1&lt;/td&gt;
+    &lt;td&gt;Ячейка 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+<h2>6. Форма</h2>
+<pre>&lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Имя:&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+
+&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;
+
+&lt;input type=&quot;submit&quot; value=&quot;Отправить&quot;&gt;
+&lt;/form&gt;
+</pre>
+<h2>7. Семантические элементы</h2>
+<pre>&lt;header&gt;Шапка сайта&lt;/header&gt;
+&lt;nav&gt;Навигация&lt;/nav&gt;
+&lt;main&gt;
+    &lt;article&gt;Статья&lt;/article&gt;
+    &lt;section&gt;Раздел&lt;/section&gt;
+&lt;/main&gt;
+&lt;aside&gt;Боковая панель&lt;/aside&gt;
+&lt;footer&gt;Подвал&lt;/footer&gt;
+</pre>
+<h2>8. Мультмедиа</h2>
+<pre>&lt;video controls width=&quot;300&quot;&gt;
+&lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+&lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</pre>
+</body>
+</html>
