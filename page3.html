@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="UTF-8" />
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img2.freepng.ru/20180425/rse/avekc8szp.webp"/>
+    <title>Обучалка по HTML</title>
+  </head>
+  <body>
+  <div style="text-align: center;">
+    <h1> Обучалка по CSS </h1>
+  <ul> 
+<h2>    <li><a href="index.html" class="active">Главная</a></li>
+    <li><a href="page2.html">Основы HTML</a></li>
+    <li><a href="page3.html">Основы CSS</a></li> </h2>
+    <h1> Основные CSS коды для создания веб-страницы </h1>
+<h2> 1. Базовые стили текста </h2>
+<pre><code>/* Основные стили текста */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}</code></pre>
+<h2>2. Стилизация ссылок</h2>
+<pre><code>/* Стили для ссылок */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #004499;
+}</code></pre>
+<h2>3. Стили для кнопок</h2>
+<pre><code>/* Стили кнопок */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #004499;
+}</code></pre>
+<h2>4. Flexbox раскладка</h2>
+<pre><code>/* Flexbox контейнер */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}</code></pre>
+<h2>5. Grid раскладка</h2>
+<pre><code>/* Grid контейнер */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}</code></pre>
+<h2>6. Адаптивные медиа-запросы</h2>
+<pre><code>/* Медиа-запросы для адаптива */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+<h2>7. Стили для форм</h2>
+<pre><code>/* Стилизация форм */
+input, textarea {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+}</code></pre>
+<h2>8. Анимации</h2>
+<pre><code>/* Простая анимация */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animated {
+  animation: fadeIn 0.5s ease-in-out;
+}</code></pre>
+<h2>9. Стили для таблиц</h2>
+<pre><code>/* Стилизация таблиц */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5;
+}</code></pre>
+<h2>10. Общие утилитные классы</h2>
+<pre><code>/* Утилитные классы */
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.p-15 { padding: 15px; }
+.hidden { display: none; }</code></pre>
+<h2> Несколько помогалок и фич </h2>
+В полной версии обучения за 9.99$
+  </body>
+</html>
 
