@@ -1,24 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <meta charset="UTF-8" />
-  <head>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://img2.freepng.ru/20180425/rse/avekc8szp.webp"/>
-    <title>Обучалка по HTML</title>
-  </head>
-  <body>
-  <div style="text-align: center;">
-    <h1> Обучалка по HTML приветствует вас! </h1>
-<h3> Здесь вы научитесь html кодам и css </h3>
-  <ul> 
-<h2>    <li><a href="index.html" class="active">Главная</a></li>
-    <li><a href="page2.html">Основы HTML</a></li>
-    <li><a href="page3.html">Основы CSS</a></li> </h2>
-<h1> HTML это основа всех сайтов в интернете буквально! </h1>
-<h1> Без HTML не было бы и самих сайтов! </h1>
-
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://img2.freepng.ru/20180425/rse/avekc8szp.webp">
+  <title>Обучалка по HTML</title>
+  <style>
+    /* Основные стили */
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent-color: #e74c3c;
+      --light-color: #ecf0f1;
+      --dark-color: #34495e;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-color);
+      color: var(--dark-color);
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Стили заголовков */
+    h1 {
+      color: var(--primary-color);
+      margin: 20px 0;
+      text-align: center;
+      font-size: 2.2em;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    h1::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: var(--secondary-color);
+    }
+    
+    h2 {
+      color: var(--secondary-color);
+      margin: 15px 0;
+      font-size: 1.8em;
+    }
+    
+    h3 {
+      color: #7f8c8d;
+      margin: 10px 0;
+      font-size: 1.4em;
+      text-align: center;
+      font-weight: normal;
+    }
+    
+    /* Навигационное меню */
+    .nav-menu {
+      background: var(--primary-color);
+      padding: 15px;
+      border-radius: 5px;
+      margin: 30px 0;
+    }
+    
+    .nav-menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .nav-menu li {
+      margin: 5px 0;
+    }
+    
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .nav-menu a:hover {
+      background: var(--secondary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-menu a.active {
+      background: var(--accent-color);
+    }
+    
+    /* Основной контент */
+    .main-content {
+      padding: 20px 0;
+    }
+    
+    .main-content p {
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+    
+    /* Футер */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #7f8c8d;
+      font-size: 0.9em;
+    }
+    
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+      
+      .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Обучалка по HTML приветствует вас!</h1>
+      <h3>Здесь вы научитесь HTML кодам и CSS</h3>
+    </header>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="page2.html">Основы HTML</a></li>
+        <li><a href="page3.html">Основы CSS</a></li>
+      </ul>
+    </nav>
+    
+    <main class="main-content">
+      <h2>Почему HTML так важен?</h2>
+      <p>HTML (HyperText Markup Language) - это основа всех сайтов в интернете. Без HTML не было бы и самих сайтов! Это язык разметки, который определяет структуру и содержание веб-страницы.</p>
+      
+      <h2>Что вы узнаете?</h2>
+      <p>В этом учебном пособии вы изучите все основы HTML и CSS, необходимые для создания современных веб-страниц. Мы рассмотрим теги, атрибуты, стилизацию и многое другое.</p>
+    </main>
+    
+    <footer>
+      <p>© 2025 Обучалка по HTML. Все права защищены.</p>
+    </footer>
+  </div>
+</body>
 </html>
-
